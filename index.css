@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Fonts
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 200, 400, 600
+
+*/
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 7%, 5%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  --very-dark-blue: hsl(243, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2.5rem;
+  gap: 2.5rem;
+}
+
+.container .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .top h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.container .top h1 span {
+  color: var(--grayish-blue);
+}
+
+.container .top p {
+  color: var(--grayish-blue);
+  text-align: center;
+  max-width: 500px;
+}
+
+.container .cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.container .cards .supervisor,
+.container .cards .middle .team-builder,
+.container .cards .middle .karma,
+.container .cards .calculator {
+  flex: 1;
+  max-width: 400px;
+  padding: 2rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem; /* Add some space between cards */
+}
+
+.container .cards .supervisor h1 {
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+.container .cards .supervisor p {
+  color: var(--grayish-blue);
+  margin-bottom: 3rem;
+}
+
+.container .cards .supervisor img {
+  width: 4rem;
+  align-self: flex-end;
+}
+
+.container .cards .middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.container .cards .middle .team-builder h1 {
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+.container .cards .middle .team-builder p {
+  color: var(--grayish-blue);
+  margin-bottom: 3rem;
+}
+
+.container .cards .middle .team-builder img {
+  align-self: flex-end;
+}
+
+.container .cards .middle .karma h1 {
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+.container .cards .middle .karma p {
+  color: var(--grayish-blue);
+  margin-bottom: 3rem;
+}
+
+.container .cards .middle .karma img {
+  align-self: flex-end;
+}
+
+.container .cards .calculator h1 {
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+.container .cards .calculator p {
+  color: var(--grayish-blue);
+  margin-bottom: 3rem;
+}
+
+.container .cards .calculator img {
+  width: 4rem;
+  align-self: flex-end;
+}
